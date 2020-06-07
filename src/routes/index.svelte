@@ -31,6 +31,9 @@
 		}
 	}
 </style>
+<script>
+
+</script>
 
 <svelte:head>
 	<title>Sapper project template</title>

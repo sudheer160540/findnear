@@ -2,7 +2,11 @@
 	export let segment;
 </script>
 
-<style>
+<style lang="scss">
+@import "./../theme.scss";
+// h1 {
+//   color: $main-color;
+//  }
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
@@ -49,6 +53,7 @@
 </style>
 
 <nav>
+
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
