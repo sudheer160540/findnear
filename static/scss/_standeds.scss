@@ -1,0 +1,143 @@
+/*
+Rules to follow
+1) all input height must be 32px.
+
+*/
+
+//for font size
+$size-small : 8px;
+$size-small-2 : 10px;
+$size-small-3 : 12px;
+$size-medium : 14px;
+$size-medium-2 : 16px;
+$size-large : 18px;
+$size-large-2 : 20px;
+$size-large-3 : 22px;
+$size-huge : 24px;
+$size-huge-2 : 26px;
+$size-huge-3 : 28px;
+
+//for white space
+$space-small: 5px;
+$space-small-2: 10px;
+$space-small-3: 15px;
+$space-small-4: 20px;
+$space-small-5: 25px;
+$space-medium: 30px;
+$space-medium-2: 35px;
+$space-medium-3: 40px;
+$space-medium-4: 45px;
+$space-medium-5: 50px;
+$space-large: 55px;
+$space-large-2: 60px;
+$space-large-3: 65px;
+$space-large-4: 70px;
+$space-large-5: 75px;
+$space-huge: 80px;
+$space-huge-2: 85px;
+$space-huge-3: 90px;
+$space-huge-4: 95px;
+$space-huge-5: 100px;
+
+//for different combination of input width
+$width-small:40px;
+$width-small-2:60px;
+$width-small-3:80px;
+$width-small-4:100px;
+$width-medium:120px;
+$width-medium-2:160px;
+$width-medium-3:200px;
+$width-large:240px;
+$width-large-2:280px;
+$width-large-3:320px;
+$width-huge:340px;
+$width-huge-2:360px;
+$width-huge-3:400px;
+
+
+$gray: (
+	0: #ffffff,
+	50: #fafafa,
+	100: #f5f5f5,
+	200: #eeeeee,
+	300: #e0e0e0,//lighter (placeholder),input border outline
+	400: #bdbdbd,//
+	500: #9e9e9e,//medium (input-label)
+	600: #757575,//dark , default-text-color
+	700: #616161,//Table Header,input label
+	800: #424242,//darker (input filled,heading)
+	900: #212121//darkest
+);
+
+
+  
+
+$lightest-gray:map-get($map: $gray, $key: 100);
+$light-gray:map-get($map: $gray, $key: 300);
+$neutral-gray:map-get($map: $gray, $key: 600);
+$dark-gray:map-get($map: $gray, $key: 800);
+$darkest-gray:map-get($map: $gray, $key: 900);
+
+
+$orange: (
+	0: #fdefe8,
+	50: #fbd1bc,
+	100: #f8b28f,
+	200: #f59362,
+	300: #f37536,
+	400: #f26620,
+	500: #c15119,
+	600: #913d13,
+	700: #60280c,
+	800: #301406,
+	900: #000000
+);
+
+$lightest-orange:map-get($map: $orange, $key: 100);
+$light-orange:map-get($map: $orange, $key: 200);
+$neutral-orange:map-get($map: $orange, $key: 400);
+$dark-orange:map-get($map: $orange, $key: 500);
+$darkest-orange:map-get($map: $orange, $key: 600);
+
+$blue: (
+	0: #ffffff,
+	50: #d1e9ef,
+	100: #a4d3df,
+	200: #77bdcf,
+	300: #4aa7bf,
+	400: #1d92af,
+	500: #1a839d,
+	600: #14667a,
+	700: #0e4957,
+	800: #082b34
+);
+
+$lightest-blue:map-get($map: $blue, $key: 100);
+$light-blue:map-get($map: $blue, $key: 200);
+$neutral-blue:map-get($map: $blue, $key: 400);
+$dark-blue:map-get($map: $blue, $key: 600);
+$darkest-blue:map-get($map: $blue, $key: 700);
+
+
+$input-place-holder-color: $light-gray;
+$input-value-color: $dark-gray;
+$heading-color:$dark-gray;
+$input-label: map-get($map: $gray, $key: 700);
+$input-filled: map-get($map: $gray, $key: 800);
+$input-placeholder-color: map-get($map: $gray, $key: 400);
+
+
+
+$primary-color:#f26722;
+$table-header-text-color:#616161;
+$page-title-txt-color:#c3480b;
+$row-hover-bg-color: #f5f5f5;
+$icon-color:#616161;
+$link-color:#1D92AF;
+$input-height:32px;
+$button-height:32px;
+$modal-height:60px;
+$default-text-color:#858585;
+$layout-border:#e0e0e0;
+$input-label-height:30px;
+$dropdown-popup-height:200px;
