@@ -35,6 +35,12 @@
 </style>
 <script>
 	import UserGridList from '../components/UserGridList.svelte';
+	 import Login from '../components/Login.svelte';
+  let isOpendLogin;
+
+  function openLogin(){
+    isOpendLogin = 'open';
+  }
 	let visible = false;
 	function typewriter(node, { speed = 150 }) {
 		const valid = (
@@ -98,6 +104,12 @@ Great success!
 </h1>
 {/if}
 
+
+  {#if isOpendLogin === 'open'}
+          <Login >
+		  
+		  </Login>
+     {/if}
 <UserGridList></UserGridList>
 
 

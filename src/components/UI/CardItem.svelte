@@ -183,7 +183,7 @@ import StartRating from './StartRating.svelte';
     <div class="card-img-top overflow-hidden gradient-overlay">
       <img
         class="img-fluid"
-        src="https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1484154218962-a197022b5858.jpg"
+        src="{url}"
         alt="Modern, Well-Appointed Room" />
       <a class="tile-link" href="detail-rooms.html" />
       <div class="card-img-overlay-bottom z-index-20">
@@ -240,7 +240,7 @@ import StartRating from './StartRating.svelte';
       {/each}
       </div>
       <p class="card-text text-muted">
-      <span class="h4 text-primary">$80</span> per night</p>
+      <span class="h4 text-primary">{expreance}</span> Year Expreance</p>
       </div>
     </div>
   </div>

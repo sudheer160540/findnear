@@ -8,53 +8,53 @@ import CardItems from './UI/CardItem.svelte';
 
 const chefDetails =[{
     id:1,
-    name:'Nunna Sudheer Chowdary Sample',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    name:'Nunna Sudheer Chowdary',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1484154218962-a197022b5858.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'8',
     rating:5
 },{
     id:2,
-    name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    name:'Kumar Nunna',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1426122402199-be02db90eb90.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'9',
     rating:2
 },{
     id:3,
-    name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    name:'Rishitha',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1512917774080-9991f1c4c750.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'5',
     rating:4
 },{
     id:4,
-    name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    name:'Mahi',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1494526585095-c41746248156.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'6',
     rating:1
 },
 {
     id:5,
     name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1522771739844-6a9f6d5f14af.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'5',
     rating:3
 },
 {
     id:6,
     name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1494526585095-c41746248156.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'10',
     rating:2
 },
 {
     id:7,
     name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1494526585095-c41746248156.jpg',
     description:'Modern, Well-Appointed Room',
     expreance:'12',
     rating:1
@@ -62,9 +62,9 @@ const chefDetails =[{
 {
     id:8,
     name:'Pamela',
-    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1488805990569-3c9e1d76d51c.jpg',
     description:'Modern, Well-Appointed Room',
-    expreance:'12',
+    expreance:'2',
     rating:5
 }]
 </script>

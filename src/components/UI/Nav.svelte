@@ -1,6 +1,8 @@
 <script>
   //export let segment;
-  
+  import Login from '../../components/Login.svelte';
+ import RegiterPage from '../../components/Register.svelte';
+ let isLogin;
 </script>
 
 <style lang="scss">
@@ -105,10 +107,16 @@
            
               <!-- /Megamenu end-->
           
-            
-              <li class="nav-item"><a class="nav-link" href="login.html">Sign in</a></li>
-              <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
+           
+              <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModalLong" on:click={() => (isLogin = 'login')} >Sign in</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModalLong" on:click={() => (isLogin = 'register')}>Sign up</a></li>
             </ul>
           </div>
         </div>
       </nav>
+
+  {#if isLogin === 'login'}
+  <Login></Login>
+  {:else}
+    <RegiterPage></RegiterPage>
+  {/if}
