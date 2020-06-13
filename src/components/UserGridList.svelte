@@ -8,7 +8,7 @@ import CardItems from './UI/CardItem.svelte';
 
 const chefDetails =[{
     id:1,
-    name:'Pamela',
+    name:'Nunna Sudheer Chowdary Sample',
     url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
     description:'Modern, Well-Appointed Room',
     expreance:'12',
@@ -19,16 +19,48 @@ const chefDetails =[{
     url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
     description:'Modern, Well-Appointed Room',
     expreance:'12',
-    rating:5
+    rating:2
 },{
     id:3,
     name:'Pamela',
     url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
     description:'Modern, Well-Appointed Room',
     expreance:'12',
-    rating:5
+    rating:4
 },{
     id:4,
+    name:'Pamela',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    description:'Modern, Well-Appointed Room',
+    expreance:'12',
+    rating:1
+},
+{
+    id:5,
+    name:'Pamela',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    description:'Modern, Well-Appointed Room',
+    expreance:'12',
+    rating:3
+},
+{
+    id:6,
+    name:'Pamela',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    description:'Modern, Well-Appointed Room',
+    expreance:'12',
+    rating:2
+},
+{
+    id:7,
+    name:'Pamela',
+    url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
+    description:'Modern, Well-Appointed Room',
+    expreance:'12',
+    rating:1
+},
+{
+    id:8,
     name:'Pamela',
     url:'https://d19m59y37dris4.cloudfront.net/directory/1-5/img/avatar/avatar-0.jpg',
     description:'Modern, Well-Appointed Room',

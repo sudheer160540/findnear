@@ -1,4 +1,7 @@
 <script>
+import { fade } from 'svelte/transition';
+import StartRating from './StartRating.svelte';
+
   export let name;
   export let id;
   export let expreance;
@@ -8,12 +11,25 @@
 </script>
 
 <style lang="scss">
-  .shadow {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15) !important;
+ @import '../../../static/scss/mixin.scss';
+ @import '../../../static/scss/_text.scss';
+
+ .padding-bottom{
+   padding-bottom:29px;
+ }
+  .box-shadow{
+    @include shadow;
+    @include border;
+}
+
+
+.card-body{
+  .w-100{
+   @include width;
   }
-  .border-0 {
-    border: 0 !important;
-  }
+
+}
+
   .light-overlay,
   .dark-overlay,
   .gradient-overlay {
@@ -23,6 +39,7 @@
   .overflow-hidden {
     overflow: hidden !important;
   }
+
   .card-img,
   .card-img-top {
     border-top-left-radius: calc(0.4rem - 1px);
@@ -49,14 +66,12 @@
     left: 1.25rem;
   }
   .z-index-20 {
-    z-index: 20;
+    z-index: $z-index-20;
   }
   .text-sm {
     font-size: 0.875rem;
   }
-  .text-white {
-    color: #fff !important;
-  }
+
   .align-items-center {
     -ms-flex-align: center !important;
     align-items: center !important;
@@ -65,16 +80,7 @@
     border: solid 2px #fff;
   }
   .avatar {
-    display: inline-block;
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    border: #dee2e6;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
-    line-height: 3rem;
+  @include avatar-layout;
   }
   .mr-2,
   .mx-2 {
@@ -104,8 +110,11 @@
     background: #343a40;
     line-height: 2.5rem;
   }
+  .d-flex {
+    display: flex !important;
+}
   .z-index-40 {
-    z-index: 40;
+    z-index: $z-index-40;
   }
   .card-fav-icon svg {
     vertical-align: middle;
@@ -122,7 +131,7 @@
     --layer2: currentColor;
   }
   .text-white {
-    color: #fff !important;
+    color: $lightest-gray !important;
   }
 
   svg {
@@ -130,24 +139,46 @@
     vertical-align: middle;
   }
 
-  .card-fav-icon svg {
-    vertical-align: middle;
-    opacity: 1;
-    stroke-width: 5;
-  }
-  .svg-icon {
-    width: 18px;
-    height: 18px;
-    vertical-align: text-bottom;
-    stroke: currentColor;
-    stroke-width: 3;
-    --layer1: currentColor;
-    --layer2: currentColor;
-  }
+.mb-3, .my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.text-sm {
+    font-size: .875rem;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+}
+.flex-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+}
+.text-xs {
+    font-size: .7rem;
+}
+.card-stars {
+    min-width: 65px;
+    margin-top: 2px;
+}
+.text-right {
+    text-align: right !important;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.text-muted {
+    color: #868e96 !important;
+}
+
+.md-3, .my-3 {
+    margin-bottom: 12px !important;
+}
 </style>
 
-<div class="col">
-  <div class="card shadow border-0" style="width: 240px; margin-right: 20px;">
+<div class="col padding-bottom">
+  <div class="card box-shadow" style="width: 240px; margin-right: 20px;">
 
     <div class="card-img-top overflow-hidden gradient-overlay">
       <img
@@ -194,9 +225,23 @@
     </div>
 
     <div class="card-body">
-      <h5 class="card-title">{name}</h5>
+      <!-- <h5 class="card-title">{name}</h5>
       <p class="card-text">{description}</p>
-      <a href="#" class="btn btn-primary">{expreance}</a>
+      <a href="#" class="btn btn-primary">{expreance}</a> -->
+      <div class="w-100">
+      <h6 class="card-title">
+       <span transition:fade class="text--large-1--dark--bold">{name}</span>
+      </h6>
+      <div class="card-subtitle d-flex md-3" >
+      <p class="flex-grow-1 mb-0  text--large--normaldark--normal">asdas</p>
+      <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+      {#each Array(rating) as _ , i}
+       <StartRating/>
+      {/each}
+      </div>
+      <p class="card-text text-muted">
+      <span class="h4 text-primary">$80</span> per night</p>
+      </div>
     </div>
   </div>
 </div>

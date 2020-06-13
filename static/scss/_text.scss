@@ -1,0 +1,90 @@
+@import './standeds.scss';
+
+//-----------------------Text styling start-------------------------------------
+@mixin text-weight($size, $color) {
+    &--light {
+        font-size: $size;
+        color: $color;
+        font-family: "Helvetica Light";
+    }
+    &--normal {
+        font-size: $size;
+        color: $color;
+        font-family: "Helvetica Normal";
+    }
+    &--bold {
+        font-size: $size;
+        color: $color;
+        font-family: "Helvetica Bold";
+    }
+}
+
+@mixin text-color($size) {
+    &--gray {
+        @include text-weight($size, $neutral-gray);
+    }
+
+    &--dark-gray {
+        @include text-weight($size, $input-label);
+    }
+
+    &--darkest-gray {
+        @include text-weight($size, $darkest-gray);
+    }
+
+    &--orange {
+        @include text-weight($size, $primary-color);
+    }
+    &--dark {
+        @include text-weight($size, $input-dark);
+    }
+    &--normaldark{
+        @include text-weight($size, $normal-gray);
+
+    }
+}
+
+@mixin text-size() {
+    &--small {
+        @include text-color($size-small);
+    }
+    &--small-2 {
+        @include text-color($size-small-2);
+    }
+    &--small-3 {
+        @include text-color($size-small-3);
+    }
+    &--medium {
+        @include text-color($size-medium);
+    }
+    &--medium-2 {
+        @include text-color($size-medium-2);
+    }
+    &--large {
+        @include text-color($size-large);
+    }
+    &--large-2 {
+        @include text-color($size-large-2);
+    }
+    &--large-3 {
+        @include text-color($size-large-3);
+    }
+    &--huge {
+        @include text-color($size-huge);
+    }
+    &--huge-2 {
+        @include text-color($size-huge-2);
+    }
+    &--huge-3 {
+        @include text-color($size-huge-3);
+    }
+}
+
+//Text styling
+//syntax .text--(size)--(text-color)--(text--weight)
+.text {
+    @include text-size;
+}
+
+
+//.text--(size)--(color)--(weight)

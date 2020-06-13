@@ -54,7 +54,15 @@ $width-huge:340px;
 $width-huge-2:360px;
 $width-huge-3:400px;
 
-$heigh-100-p :100%;
+$wh-100-p :100%;
+
+///z index
+$z-index-10: 10;
+$z-index-20: 20;
+$z-index-30: 30;
+$z-index-40: 40;
+$z-index-50: 50;
+
 
 $gray: (
 	0: #ffffff,
@@ -67,7 +75,8 @@ $gray: (
 	600: #757575,//dark , default-text-color
 	700: #616161,//Table Header,input label
 	800: #424242,//darker (input filled,heading)
-	900: #212121//darkest
+	900: #212121,//darkest
+	1000: #868e96,
 );
 
 
@@ -78,6 +87,7 @@ $light-gray:map-get($map: $gray, $key: 300);
 $neutral-gray:map-get($map: $gray, $key: 600);
 $dark-gray:map-get($map: $gray, $key: 800);
 $darkest-gray:map-get($map: $gray, $key: 900);
+$normal-gray:map-get($map: $gray, $key: 1000);
 
 
 $orange: (
@@ -110,7 +120,8 @@ $blue: (
 	500: #1a839d,
 	600: #14667a,
 	700: #0e4957,
-	800: #082b34
+	800: #082b34,
+	900: #343a40,
 );
 
 $lightest-blue:map-get($map: $blue, $key: 100);
@@ -126,7 +137,7 @@ $heading-color:$dark-gray;
 $input-label: map-get($map: $gray, $key: 700);
 $input-filled: map-get($map: $gray, $key: 800);
 $input-placeholder-color: map-get($map: $gray, $key: 400);
-
+$input-dark : map-get($map: $gray, $key: 900);
 
 
 $primary-color:#f26722;

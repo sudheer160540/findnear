@@ -35,7 +35,29 @@
 </style>
 <script>
 	import UserGridList from '../components/UserGridList.svelte';
+	let visible = false;
+	function typewriter(node, { speed = 150 }) {
+		const valid = (
+			node.childNodes.length === 1 &&
+			node.childNodes[0].nodeType === Node.TEXT_NODE
+		);
 
+		if (!valid) {
+			throw new Error(`This transition only works on elements with a single text node child`);
+		}
+
+		const text = node.textContent;
+		const duration = text.length * speed;
+
+		return {
+			duration,
+			tick: t => {
+				const i = ~~(text.length * t);
+				node.textContent = text.slice(0, i);
+			}
+		};
+	}
+	setTimeout(function(){  visible = true}, 50);
 
 </script>
 
@@ -70,10 +92,12 @@
         </div>
       </div>
     </section> -->
-
-<h1>Great success!
+{#if visible}
+<h1 in:typewriter>
+Great success!
 </h1>
+{/if}
+
 <UserGridList></UserGridList>
 
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
